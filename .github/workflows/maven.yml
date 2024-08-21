@@ -44,7 +44,7 @@ jobs:
     - name: Test with Maven
       run: mvn -B test 
   snyk:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
